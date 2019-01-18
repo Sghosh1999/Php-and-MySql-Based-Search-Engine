@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Engine </title>
+
+	<style type="text/css" >
+		
+		body{
+			margin:0;
+			padding: 0;
+			background-color: black;
+			background-size: cover;
+			font-family: sans-serif;
+		}
+		h1{
+			margin:0 0 10px;
+			padding: 0;
+			color:#fff;
+			font-size: 24px;
+		}
+		.box{
+			position: absolute;
+			top: 50%;
+			width: 500px;
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
+		input{
+			position: relative;
+			display: inline-block;
+			font-size: 20px;
+			box-sizing: border-box;
+			transition: .5s;
+		}
+			input[type="text"]{
+				background: #fff;
+				width: 340px;
+				height: 50px;
+				border:none;
+				outline: none;
+				padding: 0 25px;
+				border-radius: 25px 0 0 25px;
+
+			}
+			input[type="submit"]
+			 {
+			 	position: relative;
+			 	border-radius: 0 25px 25px 0;
+			 	width: 150px;
+			 	height: 50px;
+			 	border:none;
+			 	outline: none;
+			 	cursor: pointer;
+			 	background-color: #ffc107;
+			 	color: #fff;
+			 	left: -5px;
+			 }
+			 	input[type="submit"]:hover
+			 {
+			 	background-color: #ff5722;
+			 }
+
+
+
+
+	</style>
+</head>
+<body>
+	 <div class="box">
+	 	<h1>Search</h1>
+	 	<form action="results_page.php" method="POST">
+	 		<input type="text" name="user_query" placeholder="Type....">
+	 		<input type="submit" name="search" value="Search">
+	 	</form>
+	 </div>
+
+</body>
+</html>
